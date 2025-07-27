@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES2017",
     "module": "none",
+    "module": "ES2020",
     "jsx": "react",
     "outDir": "dist",
     "strict": false,
@@ -10,4 +11,5 @@
   "include": [
     "src/**/*"
   ]
+  "include": ["src/**/*"]
 }
