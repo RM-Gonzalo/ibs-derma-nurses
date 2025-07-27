@@ -25,6 +25,12 @@ nav ul {
     gap: 15px;
 }
 
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
 nav a {
     color: #333;
     text-decoration: none;
@@ -86,3 +92,7 @@ footer {
     margin-top: 40px;
 }
 
+.disclaimer {
+    font-size: 0.9em;
+    color: #555;
+}
