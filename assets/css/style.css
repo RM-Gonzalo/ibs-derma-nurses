@@ -1,19 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #ff6fa8;
+    --primary-light: #ffa9cc;
+    --text-color: #333;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
+    background-color: #fff;
 }
 
 header {
-    background-color: #f0a8c0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
     padding: 20px;
     text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     margin: 0;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 nav ul {
@@ -25,20 +48,14 @@ nav ul {
     gap: 15px;
 }
 
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-}
-
 nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
 .hero {
     background-color: #ffe8ef;
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -80,19 +97,38 @@ nav a {
 .contact-form button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #f0a8c0;
+    background-color: var(--primary-color);
     border: none;
+    color: #fff;
     cursor: pointer;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f0a8c0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: #fff;
     margin-top: 40px;
 }
 
 .disclaimer {
     font-size: 0.9em;
-    color: #555;
+    color: #fff;
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+        margin-top: 10px;
+        padding: 10px;
+    }
+    nav.open ul {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
 }
