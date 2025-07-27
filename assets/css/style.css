@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #f0a8c0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #ffe8ef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro, .team, .services-list, .contact-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team article {
+    flex: 1 1 200px;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.services-list {
+    list-style: disc;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f0a8c0;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0a8c0;
+    margin-top: 40px;
+}
+
