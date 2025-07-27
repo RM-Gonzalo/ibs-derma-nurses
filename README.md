@@ -1,17 +1,13 @@
 # IBS Derma Nurses
 
-Este repositorio contiene un mock sencillo de una web estática para una clínica estética ficticia gestionada por tres enfermeras.
+Esta versión moderniza el mock de la clínica estética para usar **React**, **TypeScript** y **Tailwind CSS**. Se mantiene una estructura sencilla sin dependencias instaladas, cargando las librerías desde un CDN.
 
 ## Estructura del sitio
-- **index.html**: página principal.
-- **about.html**: presentación del equipo.
-- **services.html**: listado de servicios generales.
-- **contact.html**: formulario de contacto (sin backend).
-- **assets/css/style.css**: hoja de estilos con diseño moderno y responsivo.
-- **assets/js/script.js**: pequeño script para el menú móvil.
-
-Las imágenes de las enfermeras utilizan marcadores de posición y el sitio es meramente demostrativo.
+- **index.html**: punto de entrada con React, cargando Tailwind y React desde CDNs y enlazando el JS compilado.
+- **src/main.tsx**: código TypeScript con componentes React.
+- **dist/main.js**: JavaScript generado con `tsc`.
+- **about.html**, **services.html**, **contact.html**: páginas estáticas legacy.
 
 ## Cómo usarlo
-Abre `index.html` en tu navegador web favorito. Todos los archivos son estáticos y no requieren procesos adicionales.
-
+1. Ejecuta `npx tsc` para compilar `src/main.tsx` en `dist/main.js` (ya generado en el repo).
+2. Abre `index.html` en tu navegador (no necesitas servidor).
