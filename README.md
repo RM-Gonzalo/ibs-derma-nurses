@@ -7,8 +7,8 @@ Este repositorio contiene un mock sencillo de una web estática para una clínic
 - **about.html**: presentación del equipo.
 - **services.html**: listado de servicios generales.
 - **contact.html**: formulario de contacto (sin backend).
-- **assets/css/style.css**: estilos básicos.
-- **assets/css/style.css**: estilos básicos y diseño responsivo.
+- **assets/css/style.css**: hoja de estilos con diseño moderno y responsivo.
+- **assets/js/script.js**: pequeño script para el menú móvil.
 
 Las imágenes de las enfermeras utilizan marcadores de posición y el sitio es meramente demostrativo.
 
