@@ -1,13 +1,14 @@
 # IBS Derma Nurses
 
-Esta versión moderniza el mock de la clínica estética para usar **React**, **TypeScript** y **Tailwind CSS**. Se mantiene una estructura sencilla sin dependencias instaladas, cargando las librerías desde un CDN.
+Sitio ficticio de una clínica de estética creado con **React**, **TypeScript** y **Tailwind CSS**. Todo se compila con `tsc` y se cargan las librerías desde CDNs, por lo que no hace falta instalar dependencias.
 
-## Estructura del sitio
-- **index.html**: punto de entrada, carga React/Tailwind desde CDNs y enlaza el JS compilado.
-- **src/main.tsx**: código TypeScript con componentes React.
-- **dist/main.js**: JavaScript generado con `tsc`.
-- Las antiguas páginas estáticas (**about.html**, **services.html**, **contact.html**) se trasladaron a rutas dentro de React.
+## Estructura
+- **index.html**: carga las librerías y el script generado.
+- **src/main.tsx**: componentes y rutas de la aplicación.
+- **dist/main.js**: código JavaScript generado con `npx tsc`.
+
+La página incluye secciones de inicio, tratamientos, galería de imágenes y un sencillo formulario de contacto.
 
 ## Cómo usarlo
-1. Ejecuta `npx tsc src/main.tsx --target ES2017 --module ES2020 --jsx react --outDir dist` para generar `dist/main.js`.
-2. Abre `index.html` en tu navegador (no necesitas servidor).
+1. Ejecuta `npx tsc` para compilar el archivo TypeScript.
+2. Abre `index.html` en tu navegador (no se necesita servidor).
